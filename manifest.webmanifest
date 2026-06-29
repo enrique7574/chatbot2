@@ -1,0 +1,11 @@
+{
+  "name": "Chatbot Maestro Pitágoras II",
+  "short_name": "PitagorasBot",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#1da9ff",
+  "icons": [
+    {"src":"chatbot_logo.jpeg", "sizes":"512x512", "type":"image/jpeg"}
+  ]
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chatbot escolar para la Unidad Educativa Maestro Pitágoras II - Gestión 2026" />
+  <title>Chatbot Maestro Pitágoras II</title>
+  <link rel="icon" href="chatbot_logo.jpeg" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="topbar">
+    <a class="brand" href="#chat" aria-label="Inicio Chatbot Maestro Pitágoras II">
+      <img src="logo.jpg" alt="Logo Unidad Educativa Maestro Pitágoras II" />
+      <span>
+        <b>Maestro Pitágoras II</b>
+        <small>Chatbot académico 2026</small>
+      </span>
+    </a>
+    <nav>
+      <a href="#chat">Chatbot</a>
+      <a href="#datos">Datos</a>
+      <a href="#docentes">Docentes</a>
+      <a href="#autores">Autores</a>
+    </nav>
+  </header>
+
+  <section id="chat" class="chat-section reveal">
+    <div class="section-title">
+      <p class="eyebrow">Entrada directa</p>
+      <h2>Chatbot de consulta escolar</h2>
+      <p>Escribe una pregunta o usa los botones rápidos. Funciona sin login y con respuestas guardadas en JavaScript.</p>
+    </div>
+
+    <div class="chat-layout">
+      <aside class="quick-panel">
+        <h3>Preguntas rápidas</h3>
+        <button data-question="¿Cuál es el objetivo general del proyecto?">Objetivo general</button>
+        <button data-question="Lista de docentes y horas de trabajo">Docentes y horas</button>
+        <button data-question="¿Cuántos estudiantes hay por curso?">Matrícula escolar</button>
+        <button data-question="¿Cuánto es la mensualidad y a quién contactar?">Mensualidad</button>
+        <button data-question="Fechas cívicas 2026">Fechas cívicas</button>
+        <button data-question="¿Quiénes son los autores del proyecto?">Autores</button>
+        <button data-question="¿Qué materiales se usan en el proyecto?">Materiales</button>
+        <button data-question="Cronograma de actividades">Cronograma</button>
+      </aside>
+
+      <div class="chat-window" role="application" aria-label="Chatbot escolar">
+        <div class="chat-header">
+          <img src="chatbot_logo.jpeg" alt="Bot" />
+          <div>
+            <h3>PitagorasBot</h3>
+            <p>Responde con la base de datos cargada en esta versión.</p>
+          </div>
+        </div>
+        <div id="messages" class="messages" aria-live="polite"></div>
+        <form id="chatForm" class="chat-form">
+          <input id="userInput" type="text" autocomplete="off" placeholder="Ej.: ¿Qué docente trabaja 128 horas?" aria-label="Escribe tu pregunta" />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="inicio" class="hero reveal">
+    <section class="hero-copy reveal">
+      <p class="eyebrow">Proyecto Productivo · Sistemas Informáticos</p>
+      <h1>Chatbot básico para fortalecer la comunicación en el colegio</h1>
+      <p class="lead">
+        Página web responsive con asistente virtual para responder consultas de estudiantes,
+        padres de familia, docentes y administrativos sobre la Unidad Educativa Maestro Pitágoras II.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#chat">Probar chatbot</a>
+        <a class="btn ghost" href="#datos">Ver información</a>
+      </div>
+      <div class="stats">
+        <article><strong>24/7</strong><span>sin iniciar sesión</span></article>
+        <article><strong>2026</strong><span>gestión escolar</span></article>
+        <article><strong>Bs 150</strong><span>10 cuotas de Bs 15</span></article>
+      </div>
+    </section>
+
+    <section class="phone-card reveal" aria-label="Vista del chatbot">
+      <div class="phone-head">
+        <img src="chatbot_logo.jpeg" alt="Icono del chatbot" />
+        <div>
+          <b>PitagorasBot</b>
+          <small>Asistente siempre aquí</small>
+        </div>
+        <span class="online-dot"></span>
+      </div>
+      <div class="mini-chat">
+        <p class="bot-bubble">Hola. Puedo responder sobre docentes, horas, cuotas, matrícula, fechas cívicas y objetivos del proyecto.</p>
+        <p class="user-bubble">¿Cuánto se paga?</p>
+        <p class="bot-bubble">La mensualidad es Bs 15 durante 10 meses. Total: Bs 150 por estudiante.</p>
+      </div>
+    </section>
+  </section>
+
+  <section id="datos" class="content-grid reveal">
+    <article class="info-card wide">
+      <p class="eyebrow">Datos institucionales</p>
+      <h2>Información base del colegio</h2>
+      <div class="data-grid">
+        <p><b>Unidad educativa:</b> Técnico Humanístico Maestro Pitágoras II</p>
+        <p><b>Nivel:</b> Secundario</p>
+        <p><b>Turno:</b> Tarde</p>
+        <p><b>Municipio:</b> La Guardia, Santa Cruz, Bolivia</p>
+        <p><b>Dirección registrada:</b> La Guardia Km 15, Barrio Cumbre de las Américas</p>
+        <p><b>Núcleo escolar:</b> Grigotá</p>
+        <p><b>Subdistrito:</b> La Guardia</p>
+        <p><b>Gestión:</b> 2026</p>
+      </div>
+    </article>
+
+    <article class="info-card">
+      <h3>Objetivo general</h3>
+      <p>
+        Implementar el desarrollo completo de un chatbot académico mediante programación
+        en plataformas digitales y diseño de respuestas automatizadas para brindar información
+        rápida sobre tareas, horarios y consultas básicas.
+      </p>
+    </article>
+
+    <article class="info-card">
+      <h3>Mensualidad</h3>
+      <p><b>Bs 15</b> por cada padre de familia por su hijo durante <b>10 meses</b>.</p>
+      <p class="total-pay">Total anual: Bs 150</p>
+      <p>Contacto sugerido: secretaría o dirección de la unidad educativa. El número telefónico no fue proporcionado en los documentos cargados.</p>
+    </article>
+
+    <article class="info-card wide">
+      <h3>Matrícula escolar registrada</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Formulario</th><th>1º</th><th>2º</th><th>3º</th><th>4º</th><th>5º</th><th>6º</th><th>Cursos</th><th>Total alumnos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Maestro Pitágoras II</td><td>126</td><td>127</td><td>132</td><td>121</td><td>109</td><td>88</td><td>18</td><td>703</td></tr>
+            <tr><td>Maestro Pitágoras</td><td>118</td><td>127</td><td>132</td><td>121</td><td>107</td><td>89</td><td>18</td><td>704</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">La lista nominal de estudiantes no fue incluida en los archivos cargados, por eso el chatbot responde con cantidades y no con nombres inventados.</p>
+    </article>
+  </section>
+
+  <section id="docentes" class="table-section reveal">
+    <div class="section-title">
+      <p class="eyebrow">Parte de asistencia</p>
+      <h2>Personal docente y administrativo</h2>
+      <p>Se muestran nombres, cargos, materias y horas. No se publican carnets, firmas ni datos sensibles.</p>
+    </div>
+    <div class="tools-row">
+      <input id="teacherSearch" type="search" placeholder="Buscar docente, materia o cargo..." aria-label="Buscar docentes" />
+      <span id="teacherCount"></span>
+    </div>
+    <div class="table-wrap elevated">
+      <table id="teacherTable">
+        <thead>
+          <tr><th>Nombre</th><th>Cargo</th><th>Materia / curso</th><th>Horas</th><th>Formulario</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="content-grid reveal">
+    <article class="info-card wide">
+      <h3>Fechas cívicas y feriados 2026</h3>
+      <div id="datesList" class="timeline"></div>
+      <p class="note">Calendario base editable. Para actos internos, dirección puede agregar fechas propias del colegio.</p>
+    </article>
+
+    <article class="info-card">
+      <h3>Recursos del proyecto</h3>
+      <ul class="clean-list">
+        <li>2 estudiantes desarrolladores y docente guía.</li>
+        <li>Celular, computadora, cuaderno o agenda, lapiceros e internet.</li>
+        <li>Herramientas gratuitas para reducir costos.</li>
+      </ul>
+    </article>
+
+    <article class="info-card">
+      <h3>Presupuesto</h3>
+      <ul class="clean-list">
+        <li>Computadora: Bs 3500</li>
+        <li>Internet: Bs 100</li>
+        <li>Cuaderno: Bs 20</li>
+        <li>Lapiceros: Bs 10</li>
+        <li><b>Total materiales básicos:</b> Bs 130</li>
+      </ul>
+    </article>
+
+    <article class="info-card wide">
+      <h3>Cronograma del desarrollo</h3>
+      <div id="scheduleList" class="cards-row"></div>
+    </article>
+  </section>
+
+  <section id="autores" class="authors reveal">
+    <div class="authors-card">
+      <img src="autores.jpg" alt="Foto de los autores del proyecto" />
+      <div>
+        <p class="eyebrow">Postulantes</p>
+        <h2>Autores del proyecto</h2>
+        <ul class="clean-list big">
+          <li>Alex Ronal Perka Soliz</li>
+          <li>Enrique Yepez</li>
+        </ul>
+        <p><b>Docente guía:</b> Prof. Adriana Vesaida García</p>
+        <p><b>Especialidad:</b> Sistemas Informáticos · Técnico Medio</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Chatbot escolar Maestro Pitágoras II · Primera versión estática para pruebas en computadora o GitHub Pages.</p>
+  </footer>
+
+  <button id="backTop" class="back-top" aria-label="Volver arriba">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
