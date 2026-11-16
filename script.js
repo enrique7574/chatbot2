@@ -1,5 +1,5 @@
 // Datos de docentes y personal administrativo para la tabla interactiva
-const teachersData = [
+const teacherData = [
   { name: "Juan Vicente Laura Siñani", role: "DIRECTOR", subject: "Dirección Administrativa", hours: "-", form: "Maestro Pitágoras II" },
   { name: "Lilian Mamani Gutierrez", role: "SECRETARIA", subject: "Secretaría y Trámites", hours: "-", form: "Maestro Pitágoras II" },
   { name: "Marvin Amaya Vidal", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
