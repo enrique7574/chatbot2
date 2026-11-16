@@ -75,10 +75,10 @@ const knowledge = {
   subdistrict:'La Guardia',
   year:'2026',
   authors:['Alex Ronal Perka Soliz','Enrique Yepez'],
-  guide:'Prof. Adriana Vesaida García',
+  guide:'Prof. Juan Diego Montano Vallejos',
   fee:'Bs 15 mensuales durante 10 meses. Total: Bs 150 por estudiante.',
   contact:'El número telefónico no está llenado en los documentos cargados. Para pagos o consultas, contactar con secretaría o dirección de la unidad educativa.',
-  objectiveGeneral:'Implementar el desarrollo completo de un chatbot académico para el colegio, mediante programación en plataformas digitales y diseño de respuestas automatizadas, para brindar información rápida sobre tareas, horarios y consultas básicas a estudiantes, docentes y padres de familia.',
+  objectiveGeneral:'Implementar el desarrollo completo de un chatbot académico para el colegio, mediante programación en plataformas digitales y diseño de respuestas automatizadas, para brindar información rápida sobre horarios y consultas básicas a estudiantes, docentes y padres de familia.',
   objectives:[
     'Diseñar la estructura básica del chatbot mediante un flujo de preguntas y respuestas.',
     'Programar las funciones principales usando herramientas digitales adecuadas.',
