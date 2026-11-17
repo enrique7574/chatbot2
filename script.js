@@ -66,7 +66,7 @@ const teacherData = [
 ];
 
 const civicDates = [
-  {date:'1 de enero', title:'Año Nuevo', note:'Feriado nacional.'},
+  {date:'1 de enero', title:'Año Nuevo', note:'Feriado nacional.'},knowledge
   {date:'22 de enero', title:'Creación del Estado Plurinacional de Bolivia', note:'En 2026 la suspensión se trasladó al 23 de enero.'},
   {date:'16 y 17 de febrero', title:'Carnaval', note:'Feriado nacional.'},
   {date:'3 de abril', title:'Viernes Santo', note:'Feriado nacional.'},
