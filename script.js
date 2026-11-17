@@ -66,7 +66,7 @@ const teacherData = [
 ];
 
 const civicDates = [
-  {date:'1 de enero', title:'Año Nuevo', note:'Feriado nacional.'},knowledge
+  {date:'1 de enero', title:'Año Nuevo', note:'Feriado nacional.'},
   {date:'22 de enero', title:'Creación del Estado Plurinacional de Bolivia', note:'En 2026 la suspensión se trasladó al 23 de enero.'},
   {date:'16 y 17 de febrero', title:'Carnaval', note:'Feriado nacional.'},
   {date:'3 de abril', title:'Viernes Santo', note:'Feriado nacional.'},
@@ -139,6 +139,49 @@ const knowledge = {
     {form:'Maestro Pitágoras', first:118, second:127, third:132, fourth:121, fifth:107, sixth:89, courses:18, total:704}
   ]
 };
+
+const systemsTopics = [
+  {
+    keywords: ["informatica", "que es informatica"],
+    title: "Informática básica",
+    answer: "La informática es el área que estudia el tratamiento automático de la información mediante computadoras. Un dato es un valor individual y la información son datos organizados con significado."
+  },
+  {
+    keywords: ["hardware", "software", "componentes", "computadora", "procesador", "cpu", "ram", "memoria ram", "disco duro", "ssd", "placa madre", "monitor", "teclado", "mouse"],
+    title: "Componentes de una computadora",
+    answer: "<b>Hardware:</b> son las partes físicas de una computadora, como el monitor, teclado y procesador.<br><br><b>Software:</b> son los programas y sistemas que permiten realizar tareas.<br><br><b>Componentes principales:</b><ul><li>Procesador (CPU): ejecuta instrucciones.</li><li>Memoria RAM: almacena temporalmente datos de trabajo.</li><li>Disco SSD o HDD: guarda archivos y programas.</li><li>Placa madre: conecta los componentes.</li><li>Monitor: muestra información.</li><li>Teclado y mouse: permiten introducir datos e interactuar.</li></ul>"
+  },
+  {
+    keywords: ["windows", "sistema operativo", "escritorio", "carpeta", "explorador de archivos", "papelera"],
+    title: "Sistema operativo Windows",
+    answer: "Windows es un sistema operativo que permite administrar los recursos de la computadora y ejecutar programas.<ul><li>Escritorio: pantalla principal.</li><li>Carpetas: organizan archivos.</li><li>Explorador de archivos: administra documentos.</li><li>Papelera de reciclaje: almacena temporalmente archivos eliminados.</li></ul>"
+  },
+  {
+    keywords: ["office", "word", "excel", "powerpoint"],
+    title: "Microsoft Office",
+    answer: "<ul><li><b>Word:</b> permite crear y editar documentos.</li><li><b>Excel:</b> permite organizar datos y realizar cálculos.</li><li><b>PowerPoint:</b> permite crear presentaciones con diapositivas.</li></ul>Estas herramientas se utilizan en actividades escolares y laborales."
+  },
+  {
+    keywords: ["internet", "navegador", "buscador", "correo electronico", "url"],
+    title: "Internet y navegación",
+    answer: "Internet es una red mundial que conecta dispositivos y permite compartir información.<ul><li>Navegador: programa para visitar sitios web.</li><li>Buscador: herramienta para encontrar información.</li><li>Correo electrónico: permite enviar y recibir mensajes.</li><li>URL: dirección de un recurso en internet.</li></ul>"
+  },
+  {
+    keywords: ["mantenimiento", "limpieza", "mantenimiento preventivo"],
+    title: "Mantenimiento preventivo",
+    answer: "Consiste en realizar cuidados periódicos para conservar una computadora en buenas condiciones.<ul><li>Mantener limpio el equipo.</li><li>No obstruir la ventilación.</li><li>Actualizar el sistema y los programas.</li><li>Organizar y respaldar los archivos.</li><li>Revisar el funcionamiento del equipo.</li></ul>"
+  },
+  {
+    keywords: ["red", "redes", "lan", "wan", "router", "switch", "direccion ip"],
+    title: "Redes informáticas",
+    answer: "Una red informática conecta dos o más dispositivos para compartir información y recursos.<ul><li>LAN: red de área local.</li><li>WAN: red de área amplia.</li><li>Router: dirige el tráfico entre redes.</li><li>Switch: conecta dispositivos dentro de una red local.</li><li>Dirección IP: identifica un dispositivo en una red.</li></ul>"
+  },
+  {
+    keywords: ["seguridad informatica", "antivirus", "contrasena", "contraseña", "copia de seguridad", "virus informatico"],
+    title: "Seguridad informática",
+    answer: "La seguridad informática busca proteger los dispositivos, programas y datos frente a accesos o daños no autorizados.<ul><li>Utilizar contraseñas seguras.</li><li>No abrir enlaces sospechosos.</li><li>Mantener actualizado el antivirus.</li><li>Realizar copias de seguridad.</li><li>No compartir información personal con desconocidos.</li></ul>"
+  }
+];
 
 const messages = document.getElementById('messages');
 const form = document.getElementById('chatForm');
@@ -284,7 +327,15 @@ function reply(raw){
   if(matchedTeachers.length > 0 && matchedTeachers.length < 8){
     return `<b>Encontré coincidencias en personal:</b>${table(['Nombre','Cargo','Materia / curso','Horas','Formulario'], teacherRows(matchedTeachers))}`;
   }
+  
+const matchedTopic = systemsTopics.find(topic =>
+  topic.keywords.some(keyword => q.includes(normalize(keyword)))
+);
 
+if(matchedTopic){
+  return `<b>${matchedTopic.title}:</b><br>${matchedTopic.answer}`;
+}
+ 
   if(q.includes('recurso') || q.includes('material') || q.includes('financiero') || q.includes('presupuesto') || q.includes('computadora') || q.includes('internet')){
     return `<b>Recursos materiales:</b>${list(knowledge.resources)}<b>Presupuesto:</b>${budgetHTML()}`;
   }
