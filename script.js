@@ -1,38 +1,70 @@
 // Datos de docentes y personal administrativo para la tabla interactiva
+
 const teacherData = [
-  { name: "Juan Vicente Laura Siñani", role: "DIRECTOR", subject: "Dirección Administrativa", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Lilian Mamani Gutierrez", role: "SECRETARIA", subject: "Secretaría y Trámites", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Marvin Amaya Vidal", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Julio Cesar Arancibia Calizaya", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Susy Nahir Cabrera Moron", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Rene Efrain Chipana Huanca", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Efrain Chumacero Quispe", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Eloina Ferrufino Quispe", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Patricia Paola Garcia Quintana", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Sergio Ramiro Gareca Rodriguez", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Edmundo Gutierrez Lopez", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Ruben Carlos Huarachi Melgarejo", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Edson Iriarte Alvarez", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Micaela Del Carmen Lucana Vinaya", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Juan Diego Montano Vallejos", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Eliceo Zapata Guillen", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Elena Arancibia Hurtado", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Victor Hugo Benito Equise", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Deisy Lilia Caballero Arancibia", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Abel Cerezo Loayza", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Gustabo Eduardo Coronel Pardo", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Goldy Columba Terrazas", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Rita Escobar Zabala", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Sonia Carmen Tinta Tinta", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Yoanna Raquel Cachi Laura", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Belen Rocio Carballo Orellana", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Evelyn Coimbra Rojas", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Elias Puma Grimaldes", role: "DOCENTE", subject: "Sistemas Informáticos / Técnico Medio", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Ignacia Vega Sanchez", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Pablo Becerra Vidal", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Abinadi Cuellar Gutierrez", role: "REGENTE", subject: "Disciplina y Control", hours: "-", form: "Maestro Pitágoras II" },
-  { name: "Mary Ybeth Miranda Toledo", role: "PORTERA", subject: "Portería y Mantenimiento", hours: "-", form: "Maestro Pitágoras II" }
+  { name: "Juan Vicente Laura Siñani", role: "DIRECTOR", subject: "Dirección Administrativa", hours: "-", form: "Maestro Pitágoras II", courses: [] },
+
+  { name: "Lilian Mamani Gutierrez", role: "SECRETARIA", subject: "Secretaría y Trámites", hours: "-", form: "Maestro Pitágoras II", courses: [] },
+
+  { name: "Marvin Amaya Vidal", role: "DOCENTE", subject: "Ciencias Sociales", hours: "-", form: "Maestro Pitágoras II", courses: ["5to B", "1ro B", "1ro C", "5to A", "5to C", "5to B", "5to C", "5to A"] },
+
+  { name: "Julio Cesar Arancibia Calizaya", role: "DOCENTE", subject: "Matemática", hours: "-", form: "Maestro Pitágoras II", courses: ["6to A", "6to C", "5to C", "5to A", "5to B", "6to A", "6to B", "5to C", "5to A", "5to B", "6to C", "6to B"] },
+
+  { name: "Susy Nahir Cabrera Moron", role: "DOCENTE", subject: "Biología", hours: "-", form: "Maestro Pitágoras II", courses: ["5to B", "1ro B", "1ro C", "2do A", "2do C", "1ro C", "5to C", "5to A", "5to B"] },
+
+  { name: "Rene Efrain Chipana Huanca", role: "DOCENTE", subject: "Inglés", hours: "-", form: "Maestro Pitágoras II", courses: ["5to C", "2do B", "4to B", "6to B", "1ro C", "2do C", "5to B", "5to A", "2do A", "3ro B", "1ro B", "3ro A"] },
+  { name: "Efrain Chumacero Quispe", role: "DOCENTE", subject: "Biología", hours: "-", form: "Maestro Pitágoras II", courses: ["6to B", "6to A", "6to C", "2do A", "2do C", "6to C", "2do B"] },
+
+  { name: "Eloina Ferrufino Quispe", role: "DOCENTE", subject: "Psicología y Artes Plásticas", hours: "-", form: "Maestro Pitágoras II", courses: ["2do A - Psicología", "1ro A - Psicología", "1ro B - Psicología", "1ro C - Psicología", "2do C - Artes Plásticas", "2do B - Psicología"] },
+
+  { name: "Patricia Paola Garcia Quintana", role: "DOCENTE", subject: "Matemática", hours: "-", form: "Maestro Pitágoras II", courses: ["1ro B", "1ro C", "2do B", "2do C", "1ro C", "1ro B", "2do C", "2do B", "2do A", "1ro A", "2do A", "1ro A", "1ro C"] },
+
+  { name: "Sergio Ramiro Gareca Rodriguez", role: "DOCENTE", subject: "Lenguaje", hours: "-", form: "Maestro Pitágoras II", courses: ["2do C", "5to C", "6to C", "2do A", "2do B", "2do A", "6to A", "6to B", "6to C", "6to B", "2do C", "5to C"] },
+
+  { name: "Edmundo Gutierrez Lopez", role: "DOCENTE", subject: "Ciencias Sociales", hours: "-", form: "Maestro Pitágoras II", courses: ["2do A", "6to C", "6to B", "6to A", "2do A", "2do B", "6to A", "2do B", "6to C"] },
+
+  { name: "Ruben Carlos Huarachi Melgarejo", role: "DOCENTE", subject: "Música y Educación Física", hours: "-", form: "Maestro Pitágoras II", courses: ["1ro A - Música", "5to B - Música", "6to B - Música", "6to C - Música", "6to C - Educación Física", "1ro B - Música", "5to A - Música", "6to A - Educación Física", "6to B - Educación Física"] },
+
+  { name: "Edson Iriarte Alvarez", role: "DOCENTE", subject: "Artes Plásticas", hours: "-", form: "Maestro Pitágoras II", courses: ["3ro C", "4to C", "6to A", "4to A", "5to B", "6to C", "3ro A", "3ro B", "6to B", "5to C", "4to B", "2do A"] },
+
+  { name: "Micaela Del Carmen Lucana Vinaya", role: "DOCENTE", subject: "Lenguaje", hours: "-", form: "Maestro Pitágoras II", courses: ["3ro A", "3ro B", "5to B", "5to A", "3ro A", "5to A", "3ro C", "3ro C", "3ro A", "4to C", "3ro C", "5to B", "3ro B"] },
+
+  { name: "Juan Diego Montano Vallejos", role: "DOCENTE", subject: "Matemática", hours: "-", form: "Maestro Pitágoras II", courses: ["4to C", "4to A", "3ro B", "3ro C", "4to B", "3ro B", "4to C", "3ro A", "3ro C", "3ro B", "4to C", "3ro A", "4to B", "4to A", "3ro C"] },
+
+  { name: "Eliceo Zapata Guillen", role: "DOCENTE", subject: "Ciencias Sociales", hours: "-", form: "Maestro Pitágoras II", courses: ["4to A", "3ro A", "3ro C", "4to C", "4to A", "3ro A", "4to B", "3ro B", "3ro C", "4to C", "3ro B", "3ro C", "4to B", "3ro A", "4to C", "4to A", "4to B", "3ro B"] },
+
+  { name: "Elena Arancibia Hurtado", role: "DOCENTE", subject: "Filosofía", hours: "-", form: "Maestro Pitágoras II", courses: ["6to C", "5to A", "3ro A", "6to A", "3ro B", "5to C", "4to A", "3ro C", "4to B", "6to B", "2do C"] },
+
+  { name: "Victor Hugo Benito Equise", role: "DOCENTE", subject: "Física, Química y Ciencias Sociales", hours: "-", form: "Maestro Pitágoras II", courses: ["5to A - Física", "6to B - Física", "5to C - Física", "5to C - Química", "6to A - Química", "2do C - Ciencias Sociales", "6to C - Física", "5to B - Química", "5to A - Química", "6to B - Química"] },
+
+  { name: "Deisy Lilia Caballero Arancibia", role: "DOCENTE", subject: "Música e Inglés", hours: "-", form: "Maestro Pitágoras II", courses: ["3ro B - Música", "2do C - Música", "4to A - Música", "1ro A - Inglés", "2do B - Música", "4to C - Música", "2do A - Música", "3ro A - Música", "4to B - Música", "3ro C - Música"] },
+
+  { name: "Abel Cerezo Loayza", role: "DOCENTE", subject: "Religión", hours: "-", form: "Maestro Pitágoras II", courses: ["4to B", "5to C", "1ro A", "6to B", "6to C", "1ro C", "6to A", "2do B", "4to B", "1ro B"] },
+
+  { name: "Gustavo Eduardo Coronel Pardo", role: "DOCENTE", subject: "Química, Física y Artes Plásticas", hours: "-", form: "Maestro Pitágoras II", courses: ["3ro B - Química", "3ro C - Física", "1ro B - Artes Plásticas", "4to B - Física", "4to C - Física", "3ro A - Química", "4to A - Química", "4to C - Química"] },
+
+  { name: "Goldy Columba Terrazas", role: "DOCENTE", subject: "Tecnología", hours: "-", form: "Maestro Pitágoras II", courses: ["2do B", "2do A", "2do C", "2do C", "1ro C", "2do B", "1ro A", "1ro B", "1ro C", "2do A", "1ro A"] },
+
+  { name: "Rita Escobar Zabala", role: "DOCENTE", subject: "Lenguaje", hours: "-", form: "Maestro Pitágoras II", courses: ["1ro C", "4to B", "1ro A", "1ro B", "1ro A", "4to B", "1ro B", "1ro C", "4to A"] },
+
+  { name: "Sonia Carmen Tinta Tinta", role: "DOCENTE", subject: "Biología", hours: "-", form: "Maestro Pitágoras II", courses: ["4to B", "3ro C", "4to C", "3ro A", "4to B", "3ro B", "4to A", "3ro C", "4to C", "3ro B", "4to A", "3ro C", "3ro A"] },
+
+  { name: "Yoanna Raquel Cachi Laura", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II", courses: [] },
+
+  { name: "Belen Rocio Carballo Orellana", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II", courses: [] },
+
+  { name: "Evelyn Coimbra Rojas", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II", courses: [] },
+
+  { name: "Elias Puma Grimaldes", role: "DOCENTE", subject: "Sistemas Informáticos / Técnico Medio", hours: "-", form: "Maestro Pitágoras II", courses: [] },
+
+  { name: "Ignacia Vega Sanchez", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II", courses: [] },
+
+  { name: "Pablo Becerra Vidal", role: "DOCENTE", subject: "Por asignar", hours: "-", form: "Maestro Pitágoras II", courses: [] },
+
+  { name: "Abinadi Cuellar Gutierrez", role: "REGENTE", subject: "Disciplina y Control", hours: "-", form: "Maestro Pitágoras II", courses: [] },
+
+  { name: "Mary Ybeth Miranda Toledo", role: "PORTERA", subject: "Portería y Mantenimiento", hours: "-", form: "Maestro Pitágoras II", courses: [] }
 ];
+
 const civicDates = [
   {date:'1 de enero', title:'Año Nuevo', note:'Feriado nacional.'},
   {date:'22 de enero', title:'Creación del Estado Plurinacional de Bolivia', note:'En 2026 la suspensión se trasladó al 23 de enero.'},
