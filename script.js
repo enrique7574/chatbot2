@@ -135,8 +135,8 @@ const knowledge = {
     'Sistema actualizable y mantenible sin depender de personal externo.'
   ],
   enrollment:[
-    {form:'Maestro Pitágoras II', first:126, second:127, third:132, fourth:121, fifth:109, sixth:88, courses:18, total:703},
-    {form:'Maestro Pitágoras', first:118, second:127, third:132, fourth:121, fifth:107, sixth:89, courses:18, total:704}
+    {form:'Maestro Pitágoras II', first:126, second:127, third:132, fourth:121, fifth:109, sixth:88, courses:18, total:721},
+
   ]
 };
 
@@ -182,6 +182,199 @@ const systemsTopics = [
     answer: "La seguridad informática busca proteger los dispositivos, programas y datos frente a accesos o daños no autorizados.<ul><li>Utilizar contraseñas seguras.</li><li>No abrir enlaces sospechosos.</li><li>Mantener actualizado el antivirus.</li><li>Realizar copias de seguridad.</li><li>No compartir información personal con desconocidos.</li></ul>"
   }
 ];
+
+// ==========================================
+// REGLAMENTO INTERNO - U.E. MAESTRO PITAGORAS II
+// Gestión 2026
+// Basado en el documento proporcionado.
+// Su vigencia debe ser confirmada por Dirección.
+// ==========================================
+
+const reglamentoTopics = [
+  {
+    keywords: [
+      "reglamento interno",
+      "reglamento del colegio",
+      "normas del colegio",
+      "normas de la unidad educativa"
+    ],
+    title: "Reglamento Interno",
+    answer: "El Reglamento Interno de la U.E. Maestro Pitágoras II establece normas para estudiantes, padres de familia, docentes y personal administrativo. Su objetivo es orientar la convivencia y el funcionamiento de la institución. Esta información se basa en el documento proporcionado y debe ser confirmada por Dirección para la gestión 2026."
+  },
+  {
+    keywords: [
+      "deberes del estudiante",
+      "obligaciones del estudiante",
+      "que debe hacer un estudiante"
+    ],
+    title: "Deberes del estudiante",
+    answer: "Según el artículo 6 del reglamento proporcionado, los estudiantes deben:<ul><li>Respetar a directivos, docentes, administrativos, compañeros y padres de familia.</li><li>Asistir puntualmente a clases.</li><li>Cuidar la infraestructura, mobiliario y materiales.</li><li>Practicar el respeto, la responsabilidad y la solidaridad.</li><li>Cumplir las actividades e instrucciones educativas.</li><li>Utilizar correctamente los materiales escolares.</li><li>Evitar apropiarse de bienes ajenos.</li></ul>"
+  },
+  {
+    keywords: [
+      "derechos del estudiante",
+      "derechos de los estudiantes",
+      "que derechos tengo como estudiante"
+    ],
+    title: "Derechos del estudiante",
+    answer: "Según el artículo 7 del documento, los estudiantes tienen derecho a:<ul><li>Recibir una educación integral y de calidad.</li><li>Ser tratados con respeto y dignidad.</li><li>Estudiar en un ambiente de armonía y sin discriminación.</li><li>Recibir apoyo durante su aprendizaje.</li><li>Ser evaluados adecuadamente.</li><li>Participar en organizaciones estudiantiles.</li><li>Expresar libremente sus opiniones.</li><li>Proteger su identidad y sus datos personales.</li></ul>"
+  },
+  {
+    keywords: [
+      "celular",
+      "celulares",
+      "telefono",
+      "telefonos",
+      "equipos moviles",
+      "puedo llevar celular",
+      "uso del celular"
+    ],
+    title: "Uso de celulares y dispositivos",
+    answer: "El artículo 6, inciso n, del reglamento proporcionado indica que durante las clases presenciales está prohibido llevar equipos móviles y otros objetos que no sean material escolar. Señala como excepción los casos autorizados por el docente y con el permiso correspondiente de Dirección. Confirma con Dirección si esta disposición continúa vigente en 2026."
+  },
+  {
+    keywords: [
+      "uniforme",
+      "uniforme escolar",
+      "vestimenta",
+      "como debo asistir vestido"
+    ],
+    title: "Uniforme escolar",
+    answer: "El artículo 6, inciso g, establece que los estudiantes deben presentarse con el uniforme consensuado y aceptado por los padres de familia durante las actividades escolares indicadas en el reglamento. Para conocer posibles actualizaciones, consulta con Dirección."
+  },
+  {
+    keywords: [
+      "inasistencia",
+      "faltar a clases",
+      "justificar falta",
+      "justificar inasistencia",
+      "licencia",
+      "permiso para faltar"
+    ],
+    title: "Justificación de inasistencias",
+    answer: "El artículo 6 del documento contempla diferentes situaciones:<ul><li>Dolencias menores: presentar una licencia escrita mediante Secretaría.</li><li>Enfermedades o situaciones graves: presentar una solicitud escrita a Dirección adjuntando certificado médico.</li><li>Emergencias: comunicar la situación al tutor y respaldar la información.</li></ul>También se indica que las inasistencias deben justificarse por escrito. Consulta con Secretaría o Dirección para conocer el procedimiento vigente."
+  },
+  {
+    keywords: [
+      "horario turno mañana",
+      "turno mañana",
+      "horario de la mañana"
+    ],
+    title: "Horario del turno mañana",
+    answer: "El documento proporcionado señala el siguiente horario para las clases técnicas del turno mañana:<ul><li>Ingreso: 07:45.</li><li>Salida: 12:05.</li></ul>Confirma con la institución si este horario continúa vigente para la gestión 2026."
+  },
+  {
+    keywords: [
+      "horario turno tarde",
+      "turno tarde",
+      "horario de la tarde"
+    ],
+    title: "Horario del turno tarde",
+    answer: "El documento proporcionado señala el siguiente horario para las clases humanísticas del turno tarde:<ul><li>Ingreso: 13:45.</li><li>Salida: 18:05.</li></ul>Confirma con la institución si este horario continúa vigente para la gestión 2026."
+  },
+  {
+    keywords: [
+      "deberes de los padres",
+      "obligaciones de los padres",
+      "responsabilidades de los padres"
+    ],
+    title: "Deberes de los padres de familia",
+    answer: "Según el artículo 9 del documento, los padres de familia deben:<ul><li>Conocer y respetar el Reglamento Interno.</li><li>Asistir a las reuniones convocadas.</li><li>Acompañar el proceso educativo de sus hijos.</li><li>Garantizar la asistencia regular a clases.</li><li>Justificar atrasos e inasistencias.</li><li>Mantener un trato respetuoso con la comunidad educativa.</li><li>Presentar reclamos o sugerencias por escrito y respetando el conducto regular.</li></ul>"
+  },
+  {
+    keywords: [
+      "derechos de los padres",
+      "derechos de padres de familia"
+    ],
+    title: "Derechos de los padres de familia",
+    answer: "Según el artículo 10 del documento, los padres de familia tienen derecho a:<ul><li>Conocer el desempeño educativo de sus hijos.</li><li>Ser atendidos por directivos y docentes.</li><li>Solicitar documentos e instrumentos de evaluación.</li><li>Participar en las directivas de padres de familia.</li></ul>"
+  },
+  {
+    keywords: [
+      "faltas leves",
+      "falta leve",
+      "que son las faltas leves"
+    ],
+    title: "Faltas leves",
+    answer: "El artículo 15 considera faltas leves, entre otras:<ul><li>Asistir irregularmente o llegar tarde sin justificación.</li><li>Provocar desorden que afecte las clases.</li><li>Retirarse de clases sin permiso.</li><li>No llevar los materiales necesarios.</li><li>Usar inadecuadamente dispositivos móviles durante las clases.</li><li>Asistir sin el uniforme establecido.</li></ul>"
+  },
+  {
+    keywords: [
+      "sanciones faltas leves",
+      "sancion falta leve",
+      "castigo falta leve"
+    ],
+    title: "Medidas por faltas leves",
+    answer: "El artículo 16 del documento menciona reflexión, llamada de atención verbal, registro en el kardex de indisciplina y trabajo comunitario. La aplicación debe seguir los procedimientos institucionales y la normativa vigente."
+  },
+  {
+    keywords: [
+      "faltas graves",
+      "falta grave",
+      "que son las faltas graves"
+    ],
+    title: "Faltas graves",
+    answer: "El artículo 17 del documento incluye como faltas graves, entre otras:<ul><li>Reincidir en faltas leves.</li><li>Promover peleas o amenazas.</li><li>Insultar, acosar o discriminar a otras personas.</li><li>Dańar la infraestructura o los materiales del colegio.</li><li>Salir de la institución sin autorización.</li><li>Presentar trabajos ajenos como propios.</li><li>Hurtar pertenencias.</li><li>Realizar publicaciones ofensivas contra miembros de la comunidad educativa.</li></ul>"
+  },
+  {
+    keywords: [
+      "sanciones faltas graves",
+      "sancion falta grave"
+    ],
+    title: "Medidas por faltas graves",
+    answer: "El artículo 18 del documento menciona llamadas de atención escritas, registro en actas, reparación de daños, decomiso de objetos relacionados con el hecho y trabajo comunitario. También menciona suspensión temporal. Cualquier medida debe ser revisada conforme a la normativa vigente, respetando el debido proceso y los derechos de los estudiantes."
+  },
+  {
+    keywords: [
+      "faltas muy graves",
+      "falta muy grave",
+      "que son las faltas muy graves"
+    ],
+    title: "Faltas muy graves",
+    answer: "El artículo 19 del documento considera muy graves determinadas conductas que afectan la integridad de las personas, como robo comprobado, agresiones, acoso, discriminación y difusión de imágenes que afectan la privacidad. Estas situaciones deben ser atendidas por las autoridades correspondientes, respetando los derechos y garantías de los estudiantes."
+  },
+  {
+    keywords: [
+      "sanciones faltas muy graves",
+      "sancion falta muy grave",
+      "expulsion",
+      "pueden expulsarme"
+    ],
+    title: "Procedimiento ante faltas muy graves",
+    answer: "El artículo 20 del documento menciona la remisión de antecedentes a las instancias competentes y medidas disciplinarias. Sin embargo, no debe interpretarse como una expulsión automática. Las decisiones deben respetar la normativa educativa vigente, el debido proceso y los derechos de niñas, niños y adolescentes. Para un caso concreto, consulta con Dirección."
+  },
+  {
+    keywords: [
+      "valores del colegio",
+      "valores institucionales",
+      "que valores practica el colegio"
+    ],
+    title: "Valores institucionales",
+    answer: "El artículo 4 del documento menciona valores como amor, respeto, igualdad, inclusión, dignidad, tolerancia, libertad, solidaridad, reciprocidad, complementariedad, armonía, transparencia, equilibrio, equidad y responsabilidad."
+  },
+  {
+    keywords: [
+      "reclamo",
+      "reclamos",
+      "sugerencia",
+      "presentar reclamo",
+      "conducto regular"
+    ],
+    title: "Reclamos y sugerencias",
+    answer: "El artículo 9, inciso k, indica que los reclamos o sugerencias deben presentarse por escrito, respetando el conducto regular vigente en la Unidad Educativa. Puedes consultar en Secretaría o Dirección cuál es el procedimiento correspondiente."
+  }
+];
+
+// Buscar consultas relacionadas con el reglamento
+function findReglamentoTopic(query) {
+  const q = normalize(query);
+
+  return reglamentoTopics.find(topic =>
+    topic.keywords.some(keyword =>
+      q.includes(normalize(keyword))
+    )
+  );
+}
 
 const messages = document.getElementById('messages');
 const form = document.getElementById('chatForm');
@@ -238,7 +431,7 @@ function findTeachers(query){
   return teacherData.filter(t => {
     const hay = normalize(`${t.name} ${t.role} ${t.subject} ${t.hours} ${t.form}`);
     if(hay.includes(q)) return true;
-    return tokens.some(token => hay.includes(token));
+    return tokens.some(token => hay.split(/\s+/).includes(token));
   });
 }
 
@@ -268,6 +461,23 @@ function budgetHTML(){
 
 function reply(raw){
   const q = normalize(raw);
+
+  // Consultas del Reglamento Interno
+  const matchedReglamento = findReglamentoTopic(raw);
+
+  if (matchedReglamento) {
+    return `<b>${matchedReglamento.title}:</b><br>
+    ${matchedReglamento.answer}
+    <br><br><small>Información basada en el reglamento proporcionado. Verifica su vigencia con Dirección.</small>`;
+  }
+
+  const matchedTopic = systemsTopics.find(topic =>
+  topic.keywords.some(keyword => q.includes(normalize(keyword)))
+);
+
+if(matchedTopic){
+  return `<b>${matchedTopic.title}:</b><br>${matchedTopic.answer}`;
+}
   const matchedTeachers = findTeachers(raw);
 
   if(!q || ['hola','buenas','ayuda','menu','inicio','que puedes responder'].some(k => q.includes(k))){
@@ -327,14 +537,6 @@ function reply(raw){
   if(matchedTeachers.length > 0 && matchedTeachers.length < 8){
     return `<b>Encontré coincidencias en personal:</b>${table(['Nombre','Cargo','Materia / curso','Horas','Formulario'], teacherRows(matchedTeachers))}`;
   }
-  
-const matchedTopic = systemsTopics.find(topic =>
-  topic.keywords.some(keyword => q.includes(normalize(keyword)))
-);
-
-if(matchedTopic){
-  return `<b>${matchedTopic.title}:</b><br>${matchedTopic.answer}`;
-}
  
   if(q.includes('recurso') || q.includes('material') || q.includes('financiero') || q.includes('presupuesto') || q.includes('computadora') || q.includes('internet')){
     return `<b>Recursos materiales:</b>${list(knowledge.resources)}<b>Presupuesto:</b>${budgetHTML()}`;
